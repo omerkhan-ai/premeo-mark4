@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PREMEO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Notification Banner -->
+    <div id="notification" class="notification">
+        Item added to cart!
+    </div>
+
+    <header>
+        <nav>
+            <!-- Logo wrapped in an anchor tag for home button -->
+            <a href="index.html" class="logo">PREMEO</a>
+            <ul>
+                <li><a href="index.html" class="nav-btn home-btn">Home</a></li> <!-- Added class "home-btn" -->
+                <!-- <a href="checkout.html" class="checkout-btn">Checkout</a> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="shop">
+        <!-- Heading for the Paddle Rackets section -->
+        <div class="section-heading">
+            <h1>Our Paddle Rackets</h1>
+        </div>
+
+        <div class="shop-container">
+            <!-- Product 1: PREMEO Power Racket -->
+            <div class="product-card" data-id="1">
+                <img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dwcb107439/images/medium/400815.116_10.jpg?sw=900&sh=900&sm=fit" alt="PREMEO Power Racket">
+                <h2>PREMEO Power Racket</h2>
+                <p class="description">High-performance paddle racket for advanced players.</p>
+                <p class="price">$20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 2: PREMEO Control Racket -->
+            <div class="product-card" data-id="2">
+                <img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dwcb107439/images/medium/400815.116_10.jpg?sw=900&sh=900&sm=fit" alt="PREMEO Control Racket">
+                <h2>PREMEO Control Racket</h2>
+                <p class="description">Designed for precision and superior control.</p>
+                <p class="price">$25.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 3: PREMEO Speed Racket -->
+            <div class="product-card" data-id="3">
+                <img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dwcb107439/images/medium/400815.116_10.jpg?sw=900&sh=900&sm=fit" alt="PREMEO Speed Racket">
+                <h2>PREMEO Speed Racket</h2>
+                <p class="description">Lightweight & aerodynamic for speed.</p>
+                <p class="price">$30.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart Icon -->
+    <div id="cart-icon" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="close-btn">&times;</div>
+            <h2>Your Cart</h2>
+            <div id="order-items"></div>
+            <div class="total">
+                Total: <span id="total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© PREMEO Sports INC | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Include EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("8xLW0VLMthuCvusTJ"); // Replace with your EmailJS User ID
+    </script>
+    <script src="shop.js" defer></script>
+</body>
+</html>
+

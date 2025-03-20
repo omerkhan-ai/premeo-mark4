@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREMEO - Elevate Your Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <!-- Logo wrapped in an anchor tag for mobile home button -->
+            <a href="index.html" class="logo">PREMEO</a>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span>&#9776;</span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="shop.html" class="nav-btn">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="dynamic-text">Elevate Your Game</h1>
+            <p>Discover the pinnacle of paddle racket performance</p>
+            <a href="shop.html" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About PREMEO Section -->
+    <section id="company" class="centered-section">
+        <div class="company-content">
+            <h2>About PREMEO</h2>
+            <p>PREMEO SPORTS INC. is a producer of SPORTS BALLS, SPORTS BAGS & SPORTSWEAR.</p>
+            <p>Based in Olivehurst, California - United States, we have invested with our partners back in Pakistan & China to secure products with 100% quality & on a priority basis.</p>
+            <p>Our partner manufacturers are BSCI & FAIRTRADE Certified manufacturers, thus meeting all social & ethical requirements of carrying out production operations.</p>
+            <p>Our business is based on selling PREMEO branded products as well as offering CUSTOMIZED products starting from as low as 50 Pcs., fully customized & door delivered to our clients.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to leave a message? Fill out the form below.</p>
+        <form action="#" method="POST" class="contact-form">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© PREMEO Sports INC | All rights reserved</p>
+            <a href="#hero" id="back-to-top" class="cta-btn">Back to Top</a>
+        </div>
+    </footer>
+
+    <!-- Script for mobile navigation (Hamburger Menu) -->
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

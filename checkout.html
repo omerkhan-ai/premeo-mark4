@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - PREMEO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">PREMEO</a> <!-- Logo now acts as home button -->
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="shop.html" class="nav-btn">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="checkout">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div id="order-items"></div>
+                <p class="total-price">Total: <span id="total-price">$0.00</span></p>
+            </div>
+
+            <form action="#" method="POST" class="checkout-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+                
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="nayapay">NayaPay</option>
+                    <option value="creditcard">Credit Card</option>
+                </select>
+                
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© PREMEO Sports INC | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Include EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("8xLW0VLMthuCvusTJ"); // Replace with your EmailJS User ID
+    </script>
+    <script src="checkout.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+/* General Styling */
+body {
+    background-color: #111;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Updated Header Navigation Button Styles */
+header .nav-btn, header .cta-btn {
+    text-decoration: none;
+    color: white; /* White text by default */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 14px 26px;
+    background-color: #00FFFF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+header .nav-btn:hover, header .cta-btn:hover {
+    background-color: black;
+    color: #00FFFF; /* Cyan text on hover */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Shop Container */
+#shop {
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h1 {
+    font-size: 2.5rem;
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+/* Product Card Styling */
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #222;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    color: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    color: #00FFFF;
+    margin: 10px 0;
+    font-size: 1.25rem;
+}
+
+.product-card .description {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product-card button {
+    background-color: #00FFFF;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    /* Remove rounded corners */
+    border-radius: 0;
+}
+
+.product-card button:hover {
+    background-color: black;
+    color: #00FFFF;
+}
+
+/* Floating Cart Icon */
+#cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00FFFF;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+#cart-icon:hover {
+    transform: scale(1.1);
+}
+
+#cart-count {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Cart Modal */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-modal-content {
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.checkout-btn {
+    background-color: #00FFFF;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    /* Remove rounded corners */
+    border-radius: 0;
+}
+
+.checkout-btn:hover {
+    background-color: black;
+    color: #00FFFF;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+footer .footer-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Cart Item Editing Buttons */
+.cart-item-info {
+    margin-bottom: 10px;
+}
+
+/* Increase/Decrease Quantity Buttons */
+.increase-qty, .decrease-qty {
+    background-color: #00FFFF;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.increase-qty:hover, .decrease-qty:hover {
+    background-color: black;
+    color: #00FFFF;
+}
+
+/* Remove Item Button */
+.remove-item {
+    background-color: #FF6347;  /* Red for removal */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.remove-item:hover {
+    background-color: #FF4500;  /* Darker red on hover */
+}
+
+/* Cart Item Styling */
+.cart-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.cart-item-info p {
+    margin: 0;
+}
+
+.cart-item-info p strong {
+    font-size: 1.1rem;
+}
+
+/* Adjust Modal Content */
+.cart-modal-content {
+    width: 80%;
+    max-width: 600px;  /* Wider modal */
+    text-align: left;
+}
+
+.order-item img {
+    width: 80px;  /* Adjust product image size */
+    height: 80px;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FFFF;
+}
+
+/* Cart Item Image */
+.cart-item-img {
+    width: 50px; /* Small size for the cropped image */
+    height: 50px;
+    object-fit: cover; /* This will crop and fit the image within the container */
+    margin-right: 10px;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00FFFF;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 2000;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
